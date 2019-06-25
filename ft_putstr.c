@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 12:51:47 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/05/28 11:07:49 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/25 12:19:43 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@ void	ft_putstr(char *str)
 	int i;
 
 	i = 0;
-	while (str[i] != '\0')
+	if (str)
 	{
-		ft_putchar(str[i++]);
+		while (str[i] != '\0')
+		{
+			ft_putchar(str[i++]);
+		}
 	}
 }
