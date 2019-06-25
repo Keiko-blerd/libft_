@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 16:44:04 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/06 16:55:48 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/25 12:53:44 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	unsigned long i;
+	size_t	i;
 
 	i = 0;
 	while (src[i] != '\0' && i < len)

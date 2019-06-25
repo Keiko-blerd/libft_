@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 15:15:14 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/11 16:11:21 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/25 12:33:05 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,24 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	unsigned long	i;
-	unsigned long	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
-	while (s1[i] != '\0')
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+	else
 	{
-		i++;
-	}
-	while (s2[j] != '\0')
-	{
-		s1[i + j] = s2[j];
-		j++;
+		while (s1[i] != '\0')
+		{
+			i++;
+		}
+		while (s2[j] != '\0')
+		{
+			s1[i + j] = s2[j];
+			j++;
+		}
 	}
 	s1[i + j] = '\0';
 	return (s1);
