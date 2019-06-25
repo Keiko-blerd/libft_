@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 12:51:43 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/13 14:32:00 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/25 15:04:07 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ size_t	ft_strlen(const char *s);
 void	ft_putchar(char c);
 void	ft_bzero(void *s, size_t n);
 void	ft_putstr(char *str);
+void	*ft_memdel(void **ap);
+void	*ft_strnew(size_t size);
+void	*ft_memalloc(size_t size);
 void	*ft_memset(void *b, int c, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
