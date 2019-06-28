@@ -6,7 +6,7 @@
 #    By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/24 13:24:40 by nhlatshw          #+#    #+#              #
-#    Updated: 2019/06/25 15:03:21 by nhlatshw         ###   ########.fr        #
+#    Updated: 2019/06/27 15:49:29 by nhlatshw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,12 @@ SRC = ft_isalpha.c \
 		ft_memalloc.c \
 		ft_memdel.c \
 		ft_strnew.c \
+		ft_strlcat.c \
+		ft_strchr.c \
+		ft_strrchr.c \
+		ft_strstr.c \
+		ft_strnstr.c \
+		ft_strcmp.c \
 		
 
 OBJ = $(SRC:.c=.o)
