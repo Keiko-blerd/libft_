@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/25 14:55:33 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/28 16:36:22 by nhlatshw         ###   ########.fr       */
+/*   Created: 2019/06/28 16:52:47 by nhlatshw          #+#    #+#             */
+/*   Updated: 2019/06/29 10:10:05 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strnew(size_t size)
+void	ft_putstr_fd(char const *s, int fd)
 {
-	return ((char *)ft_memalloc(size + 1));
+	int i;
+
+	i = 0;
+	if (s)
+	{
+		while (s[i] != '\0')
+		{
+			ft_putchar_fd(s[i++], fd);
+		}
+	}
 }

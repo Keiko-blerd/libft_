@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 16:28:43 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/25 13:44:14 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/29 12:56:34 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int		ft_atoi(const char *str)
 	i = 0;
 	num = 0;
 	sign = 1;
-	if (str == NULL)
-		return (0);
 	while (ft_isspace((str[i])) > 0)
 		i++;
 	if (str[i] == 45 || str[i] == 43)

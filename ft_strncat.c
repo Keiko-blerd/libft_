@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 14:36:57 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/25 12:58:25 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/29 11:54:15 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 
 	i = 0;
 	j = 0;
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
 	while (s1[i] != '\0')
 	{
 		i++;

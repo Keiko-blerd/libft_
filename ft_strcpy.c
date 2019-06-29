@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 16:28:14 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/25 12:58:23 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/29 11:45:16 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ char	*ft_strcpy(char *dst, const char *src)
 	size_t i;
 
 	i = 0;
-	if (src == NULL || dst == NULL)
-		return (NULL);
 	while (src[i] != '\0')
 	{
 		dst[i] = src[i];

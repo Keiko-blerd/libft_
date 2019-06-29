@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/25 14:55:33 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/28 16:36:22 by nhlatshw         ###   ########.fr       */
+/*   Created: 2019/06/28 16:50:00 by nhlatshw          #+#    #+#             */
+/*   Updated: 2019/06/28 21:28:06 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strnew(size_t size)
+int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	return ((char *)ft_memalloc(size + 1));
+	return (ft_strncmp(s1, s2, n) ? 0 : 1);
 }

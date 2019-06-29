@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 14:48:21 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/25 12:58:27 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/29 11:44:22 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t len;
 
 	len = 0;
-	if (s == NULL)
+	if (!s)
 		return (0);
 	while (s[len] != '\0')
 	{

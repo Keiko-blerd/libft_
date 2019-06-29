@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 10:20:29 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/25 15:35:12 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/06/29 11:32:00 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	dst_cast = (char *)dst;
 	src_cast = (char *)src;
-	if (dst_cast == NULL || src_cast == NULL)
-		return (NULL);
-	else
+	if (n == 0 || dst_cast == src_cast)
+		return (dst);
+	while (i < n)
 	{
-		while (i < n)
-		{
-			dst_cast[i] = src_cast[i];
-			i++;
-		}
+		dst_cast[i] = src_cast[i];
+		i++;
 	}
 	return (dst);
 }

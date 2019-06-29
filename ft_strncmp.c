@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/25 14:55:33 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/28 16:36:22 by nhlatshw         ###   ########.fr       */
+/*   Created: 2019/06/28 16:46:06 by nhlatshw          #+#    #+#             */
+/*   Updated: 2019/06/29 10:17:41 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strnew(size_t size)
+int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	return ((char *)ft_memalloc(size + 1));
+	size_t	i;
+
+	i = 0;
+	if (n == 0)
+		return (0);
+	while (s1[i] != '\0' && s1[i] == s2[i] && i < n - 1)
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
