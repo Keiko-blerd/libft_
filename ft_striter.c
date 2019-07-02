@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 16:48:15 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/29 01:00:43 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/07/02 09:55:43 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,12 @@ void	ft_striter(char *s, void (*f)(char *))
 	unsigned int	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	if (s && f)
 	{
-		f(s + i);
-		i++;
+		while (s[i] != '\0')
+		{
+			f(s + i);
+			i++;
+		}
 	}
 }

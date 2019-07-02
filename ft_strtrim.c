@@ -6,7 +6,7 @@
 /*   By: nhlatshw <nhlatshw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/28 16:51:03 by nhlatshw          #+#    #+#             */
-/*   Updated: 2019/06/29 10:46:54 by nhlatshw         ###   ########.fr       */
+/*   Updated: 2019/07/02 17:05:22 by nhlatshw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ char	*ft_strtrim(char const *s)
 	i = 0;
 	k = 0;
 	if (!s)
-	{
 		return (NULL);
-	}
 	while (ft_isspace(s[i]))
 		i++;
 	if (s[i] == '\0')
@@ -32,8 +30,7 @@ char	*ft_strtrim(char const *s)
 	j = ft_strlen(s) - 1;
 	while (ft_isspace(s[j]))
 		j--;
-	str = (char *)malloc(sizeof(char) * (j - i + 2));
-	if (str == NULL)
+	if (!(str = (char *)malloc(sizeof(char) * (j - i + 2))))
 		return (NULL);
 	while (k < j - i + 1)
 	{
